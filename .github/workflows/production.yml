@@ -17,10 +17,8 @@ jobs:
         uses: actions/checkout@v2
       - name: Install dependencies
         run: | # baixa as dependências
-          yarn install
-      - name: Build application
-        run: | # gera o pacote distributível na pasta "./dist"
-          export NODE_OPTIONS=--openssl-legacy-provider && yarn generate # adicionado flag para ignorar compatibilidade do yarn com a versão do node
+          npm install
+
       - name: Deploy to FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
