@@ -14,7 +14,7 @@ const doc = {
       description: ''
     },
     {
-      url: 'https:/whatsapp-web.azurewebsites.net:3000',
+      url: 'https:/whatsapp-web.azurewebsites.net',
       description: 'localhost'
     }
   ],
